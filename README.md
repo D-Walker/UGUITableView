@@ -1,7 +1,9 @@
 # UGUITableView
 An iOS Like Table View in UGUI
+
 支持纵向和横向的列表，动态重用加载的UI列表。代码初始化时需要设置委托方法。eg：
 
+//唤醒先初始化委托
 void Awake() {
         //一共有多少行数据，t==tbView，下同
         tbView.delegateNumberOfCells = (t) => {
