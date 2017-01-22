@@ -3,8 +3,8 @@ An iOS Like Table View in UGUI
 
 支持纵向和横向的列表，动态重用加载的UI列表。代码初始化时需要设置委托方法。eg：
 
-//唤醒先初始化委托
-void Awake() {
+    //唤醒先初始化委托
+    void Awake() {
         //一共有多少行数据，t==tbView，下同
         tbView.delegateNumberOfCells = (t) => {
             return dataList.Count;
@@ -43,8 +43,8 @@ void Awake() {
         };
     }
     
-    刷新列表的数据的方法是ReloadData(idx)
-    其中idx有不同的控制，eg：
+刷新列表的数据的方法是ReloadData(idx)
+其中idx有不同的控制，eg：
     
     //每行数据加100
     public void OnAdd100() {
